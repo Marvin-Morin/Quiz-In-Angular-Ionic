@@ -1,0 +1,26 @@
+.header {
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+ion-title {
+    max-width: auto;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+.toolbar-background {
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}

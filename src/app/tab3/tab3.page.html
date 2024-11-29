@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Profil
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Profil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <div class="stats">
+      <h2>Statistiques</h2>
+      <p>Nombre de parties jouées : {{ myParty }}</p>
+      <hr>
+      <p>Score total : {{ myScore.correct }} / {{ myScore.total }}</p>
+      <hr>
+      <p>Taux de réussite :
+        {{ myScore.total > 0 ? ((myScore.correct / myScore.total) * 100).toFixed(2) : 0 }} %
+      </p>
+      <hr>
+    </div>
+
+</ion-content>

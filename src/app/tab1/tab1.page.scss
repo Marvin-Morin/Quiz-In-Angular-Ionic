@@ -1,0 +1,138 @@
+.toolbar-background {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+ion-header span {
+    margin-left: 15px;
+}
+
+h2 {
+    color: black;
+    font-weight: bold;
+}
+
+/* Conteneur du quiz */
+.quiz-container {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+        width: auto;
+        margin: auto;
+    }
+}
+
+/* Section Question */
+.question-box {
+    margin-bottom: 20px;
+}
+
+.category,
+.difficulty {
+    font-size: 0.6rem;
+    color: #888;
+    margin: 5px 0;
+}
+
+.question-text {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Section Réponses */
+.response-box {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.answer-option {
+    margin: 10px 0;
+}
+
+.answer {
+    display: block;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.answer:hover {
+    border: 1px solid #000000;
+    transition: all 0.3s ease-out;
+}
+
+.correct {
+    background-color: #28a745;
+    color: white;
+}
+
+.incorrect {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Section Bouton Suivant */
+.next-button-container {
+    margin-top: 20px;
+}
+
+.next-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: #0056b3;
+}
+
+.theEnd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 150px auto 50px auto;
+    padding: 15px 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 500px;
+
+    button {
+        margin-top: 50px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgb(237, 36, 36);
+        transition: .3s all ease-in;
+
+        &:hover {
+            border: #ffffff;
+            background-color: rgb(237, 59, 36);
+            transition: .3s all ease-out;
+        }
+    }
+}
